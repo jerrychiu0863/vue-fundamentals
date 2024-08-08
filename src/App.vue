@@ -1,7 +1,9 @@
 <script setup>
-import Fundamentals from "./components/Fundamentals.vue";
+import { RouterView } from "vue-router";
+import Navbar from "./components/Navbar.vue";
 </script>
 
 <template>
-  <Fundamentals />
+  <Navbar />
+  <RouterView />
 </template>
