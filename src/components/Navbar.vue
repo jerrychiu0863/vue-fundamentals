@@ -5,7 +5,7 @@ import logo from "/vite.svg";
 
 const isActiveLink = (routePath) => {
   const route = useRoute();
-  console.log(route.path);
+  // console.log(route.path);
   return route.path === routePath;
 };
 
