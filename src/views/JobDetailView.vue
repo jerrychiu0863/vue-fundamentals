@@ -78,11 +78,12 @@ onMounted(async () => {
             <p>{{ state.job.company.contactPhone || "" }}</p>
           </div>
           <div class="bg-white p-4 rounded-lg shadow">
-            <button
-              class="bg-green-400 w-full text-white rounded-full py-2 mb-4"
+            <RouterLink
+              :to="`/edit-job/${state.job.id}`"
+              class="bg-green-400 w-full text-white rounded-full py-2 mb-4 block text-center"
             >
               Edit Job
-            </button>
+            </RouterLink>
             <button
               @click="handleDelete"
               class="bg-red-400 w-full text-white rounded-full py-2"

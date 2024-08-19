@@ -4,6 +4,7 @@ import JobsView from "../views/JobsView.vue";
 import AddJobView from "../views/AddJobView.vue";
 import NotFoundView from "../views/NotFoundView.vue";
 import JobDetailView from "../views/JobDetailView.vue";
+import EditJobView from "../views/EditJobView.vue";
 
 const router = createRouter({
   history: createWebHistory(import.meta.env.BASE_URL),
@@ -27,6 +28,11 @@ const router = createRouter({
       path: "/job/:id",
       name: "job-detail",
       component: JobDetailView,
+    },
+    {
+      path: "/edit-job/:id",
+      name: "edit-job",
+      component: EditJobView,
     },
     /*https://router.vuejs.org/guide/essentials/dynamic-matching#Catch-all-404-Not-found-Route*/
     {
